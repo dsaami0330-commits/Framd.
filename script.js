@@ -13,7 +13,7 @@
 const WORKS = [
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=download&id=1aFeiIaYq44FWjukxygd4UWhoTO_Bm8EC',
+    file: 'https://drive.google.com/uc?export=view&id=1aFeiIaYq44FWjukxygd4UWhoTO_Bm8EC',
     poster: 'kolton.jpg',
     title: 'Feature 01',
     tags: 'Short Form · Client Work',
@@ -21,7 +21,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=download&id=1nOON6J_RPlMZPF3SQV65HCTTKFogfH0H',
+    file: 'https://drive.google.com/uc?export=view&id=1nOON6J_RPlMZPF3SQV65HCTTKFogfH0H',
     poster: 'football-history.jpg',
     title: 'Feature 02',
     tags: 'Short Form · Sport',
@@ -29,7 +29,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=download&id=108Xciz6iugItLaSCuVHETDfwWS_i3G1g',
+    file: 'https://drive.google.com/uc?export=view&id=108Xciz6iugItLaSCuVHETDfwWS_i3G1g',
     poster: 'eric-1.jpg',
     title: 'Feature 03',
     tags: 'Short Form · Heritage',
@@ -37,7 +37,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=download&id=18ZM7w0EGoRs3hUNBmjpC1210x6EdC4up',
+    file: 'https://drive.google.com/uc?export=view&id=18ZM7w0EGoRs3hUNBmjpC1210x6EdC4up',
     poster: 'eric-3.jpg',
     title: 'Feature 04',
     tags: 'Short Form · Heritage',
@@ -45,7 +45,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=download&id=1EUqmwdLgbx36B41YVbZph53KjeQNNXey',
+    file: 'https://drive.google.com/uc?export=view&id=1EUqmwdLgbx36B41YVbZph53KjeQNNXey',
     poster: 'portfolio-cut.jpg',
     title: 'Feature 05',
     tags: 'Short Form',
@@ -54,7 +54,7 @@ const WORKS = [
 
   {
     type: 'long',
-    file: 'https://drive.google.com/uc?export=download&id=1LsNxHX0ynjhs56lIdBQYmrvSpMjirAjN',
+    file: 'https://drive.google.com/uc?export=view&id=1LsNxHX0ynjhs56lIdBQYmrvSpMjirAjN',
     poster: 'feature-01.jpg',
     title: 'Feature — 01',
     tags: 'Long Form',
