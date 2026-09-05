@@ -14,50 +14,50 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://drive.google.com/uc?export=view&id=1aFeiIaYq44FWjukxygd4UWhoTO_Bm8EC',
-    poster: 'kolton.jpg',
-    title: 'Feature 01',
-    tags: 'Short Form · Client Work',
+    poster: 'posters/kolton.jpg',
+    title: 'Creator-Led Storytelling',
+    tags: 'Short Form · Influencer Edit',
     dur: '0:45'
   },
   {
     type: 'short',
     file: 'https://drive.google.com/uc?export=view&id=1nOON6J_RPlMZPF3SQV65HCTTKFogfH0H',
-    poster: 'football-history.jpg',
-    title: 'Feature 02',
-    tags: 'Short Form · Sport',
+    poster: 'posters/football-history.jpg',
+    title: 'Animated Storytelling',
+    tags: 'Short Form · Sports Content',
     dur: '0:36'
   },
   {
     type: 'short',
     file: 'https://drive.google.com/uc?export=view&id=108Xciz6iugItLaSCuVHETDfwWS_i3G1g',
-    poster: 'eric-1.jpg',
-    title: 'Feature 03',
+    poster: 'posters/eric-1.jpg',
+    title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
     dur: '0:37'
   },
   {
     type: 'short',
     file: 'https://drive.google.com/uc?export=view&id=18ZM7w0EGoRs3hUNBmjpC1210x6EdC4up',
-    poster: 'eric-3.jpg',
-    title: 'Feature 04',
+    poster: 'posters/eric-3.jpg',
+    title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
     dur: '1:28'
   },
   {
     type: 'short',
     file: 'https://drive.google.com/uc?export=view&id=1EUqmwdLgbx36B41YVbZph53KjeQNNXey',
-    poster: 'portfolio-cut.jpg',
-    title: 'Feature 05',
-    tags: 'Short Form',
+    poster: 'posters/portfolio-cut.jpg',
+    title: 'Branded Conversion Content',
+    tags: 'Short Form · Ads',
     dur: '0:36'
   },
 
   {
     type: 'long',
     file: 'https://drive.google.com/uc?export=view&id=1LsNxHX0ynjhs56lIdBQYmrvSpMjirAjN',
-    poster: 'feature-01.jpg',
-    title: 'Feature — 01',
-    tags: 'Long Form',
+    poster: 'posters/feature-01.jpg',
+    title: 'Creator Content — YouTube Edits',
+    tags: 'Long Form · Creator',
     dur: '8:35'
   }
 ];
