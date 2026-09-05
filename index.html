@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Framd — AI Video Studio</title>
+<meta name="description" content="Framd — short-form and long-form AI video production. Scripts, voice, motion and editing. Built for brands and creators who need content that performs.">
+
+<meta property="og:title" content="Framd — AI Video Studio">
+<meta property="og:description" content="Short-form that stops the scroll. Long-form that holds attention. AI-powered, human-directed.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=general-sans@400,500,600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="Primary">
+  <a class="nav__mark" href="#top"><span class="wm"><img class="wm__img" src="logo-framd.png" alt="Framd"><span class="wm__dot" aria-hidden="true"></span></span></a>
+  <ul class="nav__list">
+    <li><a href="#top" data-nav>Home</a></li>
+    <li><a href="#short" data-nav>Short Form</a></li>
+    <li><a href="#long" data-nav>Long Form</a></li>
+    <li><a href="#pricing" data-nav>Pricing</a></li>
+  </ul>
+</nav>
+
+<main id="top">
+
+  <header class="hero">
+    <span class="eyebrow">AI Video Studio</span>
+
+    <h1 class="hero__title"><span class="wm"><img class="wm__img" src="logo-framd.png" alt="Framd"><span class="wm__dot" aria-hidden="true"></span></span></h1>
+
+    <p class="tagline">Every frame earns it<span>.</span></p>
+
+    <p class="hero__line">
+      Short-form that stops the scroll.
+      <span class="accent">Long-form that holds attention.</span>
+    </p>
+
+    <div class="hero__meta">
+      <div>
+        <h2 class="label">What we do</h2>
+        <p>Full AI video production — scripted, voiced, edited and export-ready.
+           Short-form for brands and creators. Long-form for YouTube and authority content.</p>
+      </div>
+      <div>
+        <h2 class="label">Services</h2>
+        <p>Short-form &amp; Reels<br>Long-form &amp; YouTube<br>Ad creative<br>Voice cloning &amp; avatars</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="short">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Short Form</span>
+        <h2 class="section__title">Built for the feed.</h2>
+      </div>
+      <p class="section__note">Tap any clip to play with sound.</p>
+    </div>
+    <div class="grid" id="shortGrid"></div>
+  </section>
+
+  <section class="section" id="long">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Long Form</span>
+        <h2 class="section__title">Built to be watched.</h2>
+      </div>
+    </div>
+    <div class="rows" id="longRows"></div>
+    <p class="empty" id="longEmpty" hidden>Long-form work coming shortly.</p>
+  </section>
+
+  <section class="section" id="pricing">
+    <div class="section__head">
+      <div>
+        <span class="eyebrow">Rates</span>
+        <h2 class="section__title">Pricing</h2>
+      </div>
+
+      <div class="switch" role="tablist" aria-label="Pricing type">
+        <button class="switch__btn is-on" role="tab" aria-selected="true"
+                aria-controls="panelShort" id="tabShort" data-panel="panelShort">Short Form</button>
+        <button class="switch__btn" role="tab" aria-selected="false"
+                aria-controls="panelLong" id="tabLong" data-panel="panelLong">Long Form</button>
+      </div>
+    </div>
+
+    <!-- Short-form tiers -->
+    <div class="plans" id="panelShort" role="tabpanel" aria-labelledby="tabShort">
+
+      <article class="plan">
+        <div class="plan__inner">
+          <h3 class="plan__name">Starter Pack</h3>
+          <p class="plan__tag">Test the output before committing</p>
+          <p class="plan__price"><span>$299</span> / one-time</p>
+          <p class="plan__note">No monthly commitment</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>3 short-form videos, up to 60s each</li>
+            <li>Script written from your brief or footage</li>
+            <li>AI voiceover or client voice clone</li>
+            <li>Captions and platform-ready exports</li>
+            <li>1 round of revisions</li>
+            <li>5&ndash;7 day turnaround</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__for">Best for a single campaign test, or trying Framd before scaling.</p>
+        </div>
+      </article>
+
+      <article class="plan plan--featured">
+        <span class="plan__badge">Recommended</span>
+        <div class="plan__inner">
+          <h3 class="plan__name">Growth Retainer</h3>
+          <p class="plan__tag">Consistent pipeline, monthly output</p>
+          <p class="plan__price"><span>$799</span> / month</p>
+          <p class="plan__note">Strategy and content audit in month one</p>
+          <p class="plan__anchor">Direct-client band: $1,500&ndash;$5,000/mo</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>8 short-form videos per month, up to 90s</li>
+            <li>Scripting from briefs, calls or raw footage</li>
+            <li>AI voiceover or cloned client voice</li>
+            <li>Reels, TikToks and Shorts &mdash; every platform cut</li>
+            <li>Captions, hooks, b-roll and music</li>
+            <li>2 rounds of revisions per video</li>
+            <li>Priority 3-day turnaround</li>
+            <li>Monthly content calendar</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__commit">3-month minimum</p>
+          <p class="plan__for">Best for brands and creators who need a steady pipeline at a fraction of agency cost.</p>
+        </div>
+      </article>
+
+      <article class="plan">
+        <div class="plan__inner">
+          <h3 class="plan__name">Scale Retainer</h3>
+          <p class="plan__tag">Full stack &mdash; ads, social and long-form</p>
+          <p class="plan__price"><span>$1,500</span> / month</p>
+          <p class="plan__note">Baseline audit included in month one</p>
+          <p class="plan__anchor">Agency equivalents charge $5,000&ndash;$10,000+</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>Everything in Growth</li>
+            <li>Up to 20 videos per month, short and long-form</li>
+            <li>Long-form YouTube videos, 5&ndash;15 min</li>
+            <li>Ad creative for Meta, TikTok and YouTube</li>
+            <li>UGC-style testimonials and product videos</li>
+            <li>Custom AI avatar per brand</li>
+            <li>Monthly performance narrative</li>
+            <li>Dedicated Slack and monthly strategy call</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__commit">3-month minimum</p>
+          <p class="plan__for">Best for teams who want ads, social and YouTube handled under one retainer.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Long-form tiers -->
+    <div class="plans plans--two" id="panelLong" role="tabpanel" aria-labelledby="tabLong" hidden>
+
+      <article class="plan">
+        <div class="plan__inner">
+          <h3 class="plan__name">Single Video</h3>
+          <p class="plan__tag">One production-quality long-form video. No commitment.</p>
+          <p class="plan__price"><span>$600</span> / video</p>
+          <p class="plan__note">20&ndash;25 min finished length, delivered in 7&ndash;10 days</p>
+          <p class="plan__anchor">Market rate: $500&ndash;$1,500</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>Full research-backed script, 20&ndash;25 min</li>
+            <li>AI avatar or voice-only narration</li>
+            <li>B-roll throughout</li>
+            <li>Captions, chapters and timestamps</li>
+            <li>SEO title, description and tags</li>
+            <li>Thumbnail design included</li>
+            <li>2 rounds of revisions</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__for">Best for a one-off authority video, or testing long-form before committing.</p>
+        </div>
+      </article>
+
+      <article class="plan plan--featured">
+        <span class="plan__badge">Best Value</span>
+        <div class="plan__inner">
+          <h3 class="plan__name">Long-Form Retainer</h3>
+          <p class="plan__tag">Two full long-form videos per month.</p>
+          <p class="plan__price"><span>$999</span> / month</p>
+          <p class="plan__note">2 videos &times; 20&ndash;25 min &mdash; saves $201 against the single rate</p>
+          <p class="plan__anchor">Market rate: $1,000&ndash;$3,000 per video</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>Everything in Single Video, twice monthly</li>
+            <li>Dedicated topic research and content calendar</li>
+            <li>Brand-consistent visual style locked per client</li>
+            <li>Custom AI avatar or cloned voice per channel</li>
+            <li>3 shorts cut from every video</li>
+            <li>Full YouTube upload package</li>
+            <li>Priority 5-day turnaround per video</li>
+            <li>Monthly strategy call</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__commit">3-month minimum</p>
+          <p class="plan__for">Best for creators and brands building an authority channel &mdash; 60&ndash;80% below agency rates for the same output.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="plans__foot">Add-ons available: extra videos, rush delivery, ad usage rights and multilingual voice cloning.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>&copy; 2026 Framd<span style="color:var(--brand)">.</span> All rights reserved.</span>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Video player">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Close video">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"
+         stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="lightbox__stage" id="lightboxStage"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
