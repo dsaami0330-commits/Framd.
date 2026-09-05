@@ -14,7 +14,7 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Influencer.TikTok.Insta.Videos.mp4',
-    poster: 'posters/kolton.jpg',
+    poster: 'kolton.jpg',
     title: 'Creator-Led Storytelling',
     tags: 'Short Form · Influencer Edit',
     dur: '0:45'
@@ -22,7 +22,7 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Classic.YT.FB.shorts.mp4',
-    poster: 'posters/football-history.jpg',
+    poster: 'football-history.jpg',
     title: 'Animated Storytelling',
     tags: 'Short Form · Sports Content',
     dur: '0:36'
@@ -30,7 +30,7 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Vox.Style.Historical.Docu.mp4',
-    poster: 'posters/eric-1.jpg',
+    poster: 'eric-1.jpg',
     title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
     dur: '0:37'
@@ -38,7 +38,7 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Vox.Style.shorts.museum.mp4',
-    poster: 'posters/eric-3.jpg',
+    poster: 'eric-3.jpg',
     title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
     dur: '1:28'
@@ -46,7 +46,7 @@ const WORKS = [
   {
     type: 'short',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Conversion.Asset.Finance.mp4',
-    poster: 'posters/portfolio-cut.jpg',
+    poster: 'portfolio-cut.jpg',
     title: 'Branded Conversion Content',
     tags: 'Short Form · Ads',
     dur: '0:36'
@@ -55,7 +55,7 @@ const WORKS = [
   {
     type: 'long',
     file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Long.Form.1.-.Creator.Led.mp4',
-    poster: 'posters/feature-01.jpg',
+    poster: 'feature-01.jpg',
     title: 'Creator Content — YouTube Edits',
     tags: 'Long Form · Creator',
     dur: '8:35'
