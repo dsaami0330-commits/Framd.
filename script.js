@@ -172,18 +172,19 @@ function openLightbox(index) {
   video.controls = true;
   video.playsInline = true;
   video.preload = 'auto';
+  video.muted = true;
 
   stage.replaceChildren(video);
   lightbox.hidden = false;
   document.body.style.overflow = 'hidden';
 
-  // Force autoplay after video is ready to receive data
-  video.addEventListener('loadeddata', () => {
-    video.play().catch(() => { /* browser blocked — user can tap play */ });
-  }, { once: true });
-
-  // Fallback: try playing immediately too (works when browser allows)
-  video.play().catch(() => {});
+  // Start muted (Chrome allows this), then unmute after playback begins
+  video.play().then(() => {
+    setTimeout(() => { video.muted = false; }, 150);
+  }).catch(() => {
+    // If even muted autoplay fails, user can tap play manually
+    video.muted = false;
+  });
 }
 
 function closeLightbox() {
