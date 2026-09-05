@@ -138,25 +138,18 @@ if (allowPreviews && 'IntersectionObserver' in window) {
       if (!video) return;
 
       if (entry.isIntersecting) {
-        if (!video.src) {
-          video.src = video.dataset.src;
-          // Wait for data to arrive before playing (handles redirecting URLs)
-          video.addEventListener('canplay', () => {
-            video.play()
-              .then(() => tile.classList.add('is-previewing'))
-              .catch(() => {});
-          }, { once: true });
-        } else {
-          video.play()
-            .then(() => tile.classList.add('is-previewing'))
-            .catch(() => {});
-        }
+        // Attach the source the first time the tile is actually seen,
+        // so nothing downloads for work the visitor scrolls past.
+        if (!video.src) video.src = video.dataset.src;
+        video.play()
+          .then(() => tile.classList.add('is-previewing'))
+          .catch(() => { /* autoplay blocked — poster stays, no harm */ });
       } else {
         video.pause();
         tile.classList.remove('is-previewing');
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.55 });
 
   document.querySelectorAll('.tile').forEach((t) => previewObserver.observe(t));
 }
