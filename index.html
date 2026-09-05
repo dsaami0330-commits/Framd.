@@ -10,10 +10,45 @@
 <meta property="og:description" content="Short-form that stops the scroll. Long-form that holds attention. AI-powered, human-directed.">
 <meta property="og:type" content="website">
 
+<!-- Orange dot favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23fb621e'/></svg>">
+
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
 <link rel="stylesheet"
       href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&f[]=general-sans@400,500,600&display=swap">
 <link rel="stylesheet" href="style.css">
+
+<!-- 4-column grid for short-form pricing on desktop + spacing fixes -->
+<style>
+  @media (min-width: 901px) {
+    .plans--four { grid-template-columns: repeat(4, 1fr) !important; }
+  }
+  /* tighten the empty spaces */
+  .hero { padding-top: 160px !important; padding-bottom: 80px !important; }
+  .hero__meta { margin-top: 72px !important; }
+  :root { --pad-section: 110px; }
+  /* service pills */
+  .service-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .service-pill {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    background: var(--shell);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+</style>
 </head>
 <body>
 
@@ -51,7 +86,12 @@
       </div>
       <div>
         <h2 class="label">Services</h2>
-        <p>Short-form &amp; Reels<br>Long-form &amp; YouTube<br>Ad creative<br>Voice cloning &amp; avatars</p>
+        <ul class="service-pills">
+          <li class="service-pill">Short-form &amp; Reels</li>
+          <li class="service-pill">Long-form &amp; YouTube</li>
+          <li class="service-pill">Ad creative</li>
+          <li class="service-pill">Voice cloning &amp; avatars</li>
+        </ul>
       </div>
     </div>
   </header>
@@ -94,13 +134,33 @@
     </div>
 
     <!-- Short-form tiers -->
-    <div class="plans" id="panelShort" role="tabpanel" aria-labelledby="tabShort">
+    <div class="plans plans--four" id="panelShort" role="tabpanel" aria-labelledby="tabShort">
+
+      <article class="plan">
+        <div class="plan__inner">
+          <h3 class="plan__name">Trial</h3>
+          <p class="plan__tag">See the quality before you commit</p>
+          <p class="plan__price"><span>$75</span> / one-time</p>
+          <p class="plan__note">Zero risk — one video, no strings</p>
+          <hr class="plan__rule">
+          <ul class="plan__list">
+            <li>1 short-form video, up to 60s</li>
+            <li>Script written from your brief</li>
+            <li>AI voiceover or voice clone</li>
+            <li>Captions and platform-ready export</li>
+            <li>1 round of revisions</li>
+            <li>5&ndash;7 day turnaround</li>
+          </ul>
+          <hr class="plan__rule">
+          <p class="plan__for">Best for testing the output before scaling.</p>
+        </div>
+      </article>
 
       <article class="plan">
         <div class="plan__inner">
           <h3 class="plan__name">Starter Pack</h3>
-          <p class="plan__tag">Test the output before committing</p>
-          <p class="plan__price"><span>$299</span> / one-time</p>
+          <p class="plan__tag">Small batch, big impact</p>
+          <p class="plan__price"><span>$150</span> / one-time</p>
           <p class="plan__note">No monthly commitment</p>
           <hr class="plan__rule">
           <ul class="plan__list">
@@ -108,11 +168,11 @@
             <li>Script written from your brief or footage</li>
             <li>AI voiceover or client voice clone</li>
             <li>Captions and platform-ready exports</li>
-            <li>1 round of revisions</li>
+            <li>1 round of revisions per video</li>
             <li>5&ndash;7 day turnaround</li>
           </ul>
           <hr class="plan__rule">
-          <p class="plan__for">Best for a single campaign test, or trying Framd before scaling.</p>
+          <p class="plan__for">Best for a campaign test or trying Framd before committing monthly.</p>
         </div>
       </article>
 
@@ -121,9 +181,8 @@
         <div class="plan__inner">
           <h3 class="plan__name">Growth Retainer</h3>
           <p class="plan__tag">Consistent pipeline, monthly output</p>
-          <p class="plan__price"><span>$799</span> / month</p>
+          <p class="plan__price"><span>$350</span> / month</p>
           <p class="plan__note">Strategy and content audit in month one</p>
-          <p class="plan__anchor">Direct-client band: $1,500&ndash;$5,000/mo</p>
           <hr class="plan__rule">
           <ul class="plan__list">
             <li>8 short-form videos per month, up to 90s</li>
@@ -145,9 +204,8 @@
         <div class="plan__inner">
           <h3 class="plan__name">Scale Retainer</h3>
           <p class="plan__tag">Full stack &mdash; ads, social and long-form</p>
-          <p class="plan__price"><span>$1,500</span> / month</p>
+          <p class="plan__price"><span>$700</span> / month</p>
           <p class="plan__note">Baseline audit included in month one</p>
-          <p class="plan__anchor">Agency equivalents charge $5,000&ndash;$10,000+</p>
           <hr class="plan__rule">
           <ul class="plan__list">
             <li>Everything in Growth</li>
@@ -174,9 +232,8 @@
         <div class="plan__inner">
           <h3 class="plan__name">Single Video</h3>
           <p class="plan__tag">One production-quality long-form video. No commitment.</p>
-          <p class="plan__price"><span>$600</span> / video</p>
+          <p class="plan__price"><span>$349</span> / video</p>
           <p class="plan__note">20&ndash;25 min finished length, delivered in 7&ndash;10 days</p>
-          <p class="plan__anchor">Market rate: $500&ndash;$1,500</p>
           <hr class="plan__rule">
           <ul class="plan__list">
             <li>Full research-backed script, 20&ndash;25 min</li>
@@ -197,9 +254,8 @@
         <div class="plan__inner">
           <h3 class="plan__name">Long-Form Retainer</h3>
           <p class="plan__tag">Two full long-form videos per month.</p>
-          <p class="plan__price"><span>$999</span> / month</p>
-          <p class="plan__note">2 videos &times; 20&ndash;25 min &mdash; saves $201 against the single rate</p>
-          <p class="plan__anchor">Market rate: $1,000&ndash;$3,000 per video</p>
+          <p class="plan__price"><span>$599</span> / month</p>
+          <p class="plan__note">2 videos &times; 20&ndash;25 min &mdash; saves $99 against the single rate</p>
           <hr class="plan__rule">
           <ul class="plan__list">
             <li>Everything in Single Video, twice monthly</li>
