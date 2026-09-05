@@ -140,7 +140,11 @@ if (allowPreviews && 'IntersectionObserver' in window) {
       if (entry.isIntersecting) {
         // Attach the source the first time the tile is actually seen,
         // so nothing downloads for work the visitor scrolls past.
-        if (!video.src) video.src = video.dataset.src;
+        if (!video.src) {
+          video.src = video.dataset.src;
+          video.load(); // iOS Safari: setting .src programmatically won't
+                        // trigger loading without an explicit .load() call.
+        }
         video.play()
           .then(() => tile.classList.add('is-previewing'))
           .catch(() => { /* autoplay blocked — poster stays, no harm */ });
@@ -167,16 +171,27 @@ function openLightbox(index) {
   lastFocused = document.activeElement;
 
   const video = document.createElement('video');
-  video.src = videoSrc(work.file);
   video.poster = `posters/${work.poster}`;
   video.controls = true;
   video.playsInline = true;
-  video.preload = 'auto';
   video.muted = true;
+
+  // Use a <source> with an explicit type so Safari's media engine can identify
+  // the format even after the GitHub 302 redirect (the redirected URL has AWS
+  // query params and doesn't end in .mp4, which confuses iOS without a type hint).
+  const source = document.createElement('source');
+  source.src = videoSrc(work.file);
+  source.type = 'video/mp4';
+  video.appendChild(source);
 
   stage.replaceChildren(video);
   lightbox.hidden = false;
   document.body.style.overflow = 'hidden';
+
+  // Explicit load() required on iOS: attaching a <source> child doesn't
+  // auto-trigger the resource fetch the way setting .src on an existing
+  // element does on desktop browsers.
+  video.load();
 
   // Start muted (Chrome allows this), then unmute after playback begins
   video.play().then(() => {
@@ -189,7 +204,15 @@ function openLightbox(index) {
 
 function closeLightbox() {
   const video = stage.querySelector('video');
-  if (video) { video.pause(); video.removeAttribute('src'); video.load(); }
+  if (video) {
+    video.pause();
+    // Clear the <source> child's src too — iOS holds the media resource open
+    // otherwise, which can block subsequent loads of the same file.
+    const src = video.querySelector('source');
+    if (src) src.removeAttribute('src');
+    video.removeAttribute('src');
+    video.load();
+  }
   stage.replaceChildren();
   lightbox.hidden = true;
   document.body.style.overflow = '';
