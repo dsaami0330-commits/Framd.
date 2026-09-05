@@ -170,14 +170,20 @@ function openLightbox(index) {
   video.src = videoSrc(work.file);
   video.poster = `posters/${work.poster}`;
   video.controls = true;
-  video.autoplay = true;
   video.playsInline = true;
   video.preload = 'auto';
 
   stage.replaceChildren(video);
   lightbox.hidden = false;
   document.body.style.overflow = 'hidden';
-  $('#lightboxClose').focus();
+
+  // Force autoplay after video is ready to receive data
+  video.addEventListener('loadeddata', () => {
+    video.play().catch(() => { /* browser blocked — user can tap play */ });
+  }, { once: true });
+
+  // Fallback: try playing immediately too (works when browser allows)
+  video.play().catch(() => {});
 }
 
 function closeLightbox() {
