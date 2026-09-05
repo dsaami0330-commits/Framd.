@@ -13,7 +13,7 @@
 const WORKS = [
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=view&id=1aFeiIaYq44FWjukxygd4UWhoTO_Bm8EC',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Influencer.TikTok.Insta.Videos.mp4',
     poster: 'posters/kolton.jpg',
     title: 'Creator-Led Storytelling',
     tags: 'Short Form · Influencer Edit',
@@ -21,7 +21,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=view&id=1nOON6J_RPlMZPF3SQV65HCTTKFogfH0H',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Classic.YT.FB.shorts.mp4',
     poster: 'posters/football-history.jpg',
     title: 'Animated Storytelling',
     tags: 'Short Form · Sports Content',
@@ -29,7 +29,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=view&id=108Xciz6iugItLaSCuVHETDfwWS_i3G1g',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Vox.Style.Historical.Docu.mp4',
     poster: 'posters/eric-1.jpg',
     title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
@@ -37,7 +37,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=view&id=18ZM7w0EGoRs3hUNBmjpC1210x6EdC4up',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Vox.Style.shorts.museum.mp4',
     poster: 'posters/eric-3.jpg',
     title: 'Heritage Storytelling',
     tags: 'Short Form · Heritage',
@@ -45,7 +45,7 @@ const WORKS = [
   },
   {
     type: 'short',
-    file: 'https://drive.google.com/uc?export=view&id=1EUqmwdLgbx36B41YVbZph53KjeQNNXey',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Conversion.Asset.Finance.mp4',
     poster: 'posters/portfolio-cut.jpg',
     title: 'Branded Conversion Content',
     tags: 'Short Form · Ads',
@@ -54,7 +54,7 @@ const WORKS = [
 
   {
     type: 'long',
-    file: 'https://drive.google.com/uc?export=view&id=1LsNxHX0ynjhs56lIdBQYmrvSpMjirAjN',
+    file: 'https://github.com/dsaami0330-commits/Framd./releases/download/v1.0/Long.Form.1.-.Creator.Led.mp4',
     poster: 'posters/feature-01.jpg',
     title: 'Creator Content — YouTube Edits',
     tags: 'Long Form · Creator',
